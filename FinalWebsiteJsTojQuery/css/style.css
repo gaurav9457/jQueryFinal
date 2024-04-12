@@ -1,0 +1,879 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font: 14px "Trebuchet MS", Arial, Helvetica, sans-serif;
+    color: #575652;
+    background-color: black;
+}
+
+#container {
+    width:1200px;
+    background-color: black;
+    /* height:1000px; */
+    margin:0 auto;
+}
+
+#nav {
+    /* height: 150px; */
+    width: 1200px;
+    /* background-color:red; */
+    display: inline-block;
+}
+
+#logo {
+    padding: 30px 30px 30px 30px;
+    float: left;
+}
+
+#icon {
+    float: right;
+    margin-right: 10px;
+    margin-top: 20px;
+	/* background-color:red; */
+}
+
+.TopIcon {
+    float: left;
+    padding: 7px 30px 10px 20px;
+    border-right: 1px solid grey;
+}
+
+.TopIcon:hover {
+    /* border-bottom:1px solid yellow; */
+    background-color: #ffbe0b;
+    cursor: pointer;
+}
+
+#icon3 {
+    border: none;
+}
+.loginProfile{
+float: left;
+/* height:30px; */
+/* padding-bottom:5px; */
+margin-top:3px;
+display:none;
+border-right:1px solid white;
+text-align:center;
+padding-right:3px;
+}
+#loginName{
+color:#aacc00;
+font-size:150%;
+margin:3px;
+cursor:pointer;
+text-align:center;
+}
+.loginProfile:hover{
+background-color:#ffbe0b;
+color:white;
+}
+
+#navBar {
+    /* width: 1000px; */
+    /* height: 50px; */
+    /* background-color:green; */
+    margin-top: 90px;
+    /* margin-left: 100px; */
+	/* float:right; */
+	
+}
+
+ul {
+    list-style-type: none;
+
+}
+
+ul li {
+    float: left;
+    padding: 10px;
+    font-size: 18px;
+    margin-left: 0px;
+
+
+}
+
+ul li a {
+    text-decoration: none;
+    padding: 10px;
+    color: white;
+}
+
+ul li:hover {
+    background-color: #ffbe0b;
+}
+
+
+
+ #parent {
+    height: 610px;
+    width: 1200px;
+    position:relative;
+	margin:auto;
+  }
+  .path-parent {
+    height: 123.3px;
+    width: 145px;
+    background-color: aqua;
+    float: left;
+	padding:40px 50px 40px 30px;
+	font-size: 20px;
+	text-align: center;
+	color: white;
+	/* line-height:10px; */
+	border-right:5px solid white;
+  }
+  .lightText {
+    font-weight: lighter;
+    font-size: 33px;
+    font-style: normal;
+    opacity: 0.5;
+    letter-spacing: 1px;
+}
+  .clip-path {
+    height: 203.3px;
+    width: 30px;
+    /* background-color: rgb(125 215 186); */
+       clip-path:polygon(15% 0%, 100% 50%, 0% 100%, 0% 0%);
+    float: left;
+    /* display: none;  */
+	visibility:hidden;
+	
+  }
+  .path-parent:hover + .clip-path {
+    display: block;
+	visibility:visible;
+	
+  }
+  .path-parent:hover{
+  border:none;
+  }
+  .border{
+  height:200px;
+  width:25px;
+  background-color:rgb(255 202 34);
+  clip-path: polygon(0% 0%, 100% 50%, -10% 100%, 0% 0%);
+  }
+  #child1{
+  width:200px;
+  height:610px;
+  float:left;
+  background-color:red;
+  }
+  #backImg{
+  height:610px;
+  width:1000px;
+    background-image:url("../images/demo.jpg") ;
+	background-size:cover;
+	float:left;
+  }
+  #child2{
+  width:400px;
+  position:absolute;
+  overflow:scroll;
+  height:620px;
+  }
+  ::-webkit-scrollbar { 
+    display: none;  
+}
+  #path-parent1{
+   background-color:rgb(255 202 34);
+  }
+  #path-parent2, #border2{
+  background-color:green;
+  }
+  #path-parent3, #border3{
+  background-color:aqua;
+  }
+  #clip-path1{
+  background-color:white;
+  }
+  #clip-path2{
+  background-color:white;
+  }
+  #clip-path3{
+  background-color:white;
+  }
+  #imgTextDiv {
+    margin-top: 450px;
+    display: inline-block;
+}
+
+.imgText {
+    background-color: black;
+    color: white;
+    padding: 5px 10px 5px 65px;
+}
+
+#imgText1 {
+    font-size: 45px;
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    margin-left: 360px;
+}
+
+#imgText2 {
+    font-size: 30px;
+    margin-top: 30px;
+    margin-left: 570px;
+}
+
+
+
+#storyMainDiv {
+    /* height: 435px; */
+    width: 1120px;
+    background-color: rgb(221 217 206);
+    margin-top: 10px;
+    padding: 40px;
+    
+}
+
+.story {
+    height: 420px;
+    width: 370px;
+    /* background-color:red; */
+    float: left;
+    /* border-right:1px solid grey; */
+}
+.cardBody{
+    padding: 10px;
+    float: left;
+}
+
+
+#storyImg {
+    margin-top: 15px;
+    padding: 5px;
+}
+
+#storyDivText {
+    margin-top: 17px;
+    line-height: 30px;
+    font-size: 19px;
+    text-align: justify;
+}
+/* #story2{
+    border:1px solid gray;
+    border-top: none;
+    border-bottom: none;
+} */
+#btn {
+    padding: 8px 15px;
+    background-color: black;
+    color: white;
+    margin-left: 250px;
+    border: none;
+    cursor: pointer;
+}
+
+
+
+#mission {
+    height: 150px;
+    width: 1200px;
+    background-color: #101010;
+    display: inline-block;
+}
+
+#Ourmission1 {
+    width: 130px;
+    float: left;
+    font-size: 15px;
+    padding: 20px 0px 10px 50px;
+    color: white;
+    /* background-color:red; */
+}
+
+#Ourmission2 {
+    width: 1000px;
+    float: right;
+    /* background-color:red; */
+    color: grey;
+    line-height: 22px;
+    padding: 10px 0 0 20px;
+    /* margin-right: 100px; */
+
+}
+
+#bottomquot {
+    /* margin-top:3px; */
+    padding-top: 10px;
+}
+
+#month {
+    width: 1200px;
+    /* height: 270px; */
+    background-color: #080808;
+    /* margin-top:20px; */
+}
+
+.monthDiv {
+    height: 270px;
+    width: 360px;
+    /* background-color:green; */
+    float: left;
+    margin: 20px 20px 0px 20px;
+}
+
+#monthInnerDiv {
+    padding: 20px;
+
+}
+
+#monthText {
+    font-size: 40px;
+    color: #ffbe0b;
+}
+
+#monthYear {
+    font-size: 40px;
+    color: grey;
+}
+
+#monthHead {
+    margin-top: 10px;
+    color: white;
+    font-size: 20px;
+}
+
+#monthHead2 {
+    margin-top: 10px;
+    color: grey;
+    line-height: 25px;
+    font-weight: light;
+    font-size: 15px;
+}
+
+.monthBtn {
+    padding: 14px 15px;
+    border: none;
+    cursor: pointer;
+    color: white;
+}
+
+#monthBtn1 {
+    background-color: #ffbe0b;
+}
+
+#monthBtn2 {
+    background-color: #aacc00;
+}
+
+#monthBtn3 {
+    background-color: #2ec4b6;
+}
+#StoryImgTag{
+    height: 156px;
+    width: 345px;
+}
+
+#footer {
+    width: 1200px;
+    display: inline-block;
+    background-color: black;
+}
+
+#footLogo {
+    /* height:50px; */
+    width: 350px;
+    /* background-color:red; */
+    margin: 20px;
+    padding: 10px;
+    float: left;
+
+}
+
+#hope {
+    font-size: 50px;
+    color: #ffbe0b;
+    font-style: 'Trebuchet MS', Arial, Helvetica, sans-serif;
+}
+
+#Center {
+    font-size: 50px;
+    color: white;
+}
+
+#footIconMain {
+    /* background-color:green; */
+    float: right;
+    /* height:30px; */
+    /* width: 200px; */
+    margin: 30px;
+}
+
+.footicon {
+    /* background-color:red; */
+    padding: 5px;
+}
+
+.footIocnli {
+    background-color: aqua;
+    padding: none;
+    /* float:right; */
+}
+
+#footNavMain {
+    height: 50px;
+    width: 1200px;
+    /* background-color:green; */
+}
+
+#footNav {
+    /* height:30px; */
+    width: 660px;
+    /* background-color:blue; */
+    float: left;
+    padding: 0px 10px 0px 30px;
+}
+
+#tel {
+    height: 30px;
+    width: 500px;
+    /* background-color:red; */
+    float: right;
+}
+
+#footNav ul li {
+    border-right: 1px solid;
+    padding: 10px;
+}
+
+#footNav ul li:last-child {
+    border-right: none;
+}
+
+#footNav ul li:hover {
+    background-color: black;
+}
+
+#footNav ul li a:hover {
+    background-color: black;
+    color: #ffbe0b;
+    border-bottom: 1px solid #ffbe0b;
+    /* border-right:none; */
+}
+
+#telImg {
+    float: left;
+    padding: 5px;
+}
+
+#telText {
+    font-size: 40px;
+    color: #ffbe0b;
+}
+
+#telTextDiv {
+    padding: 3px 5px 3px 15px;
+    float: left;
+}
+
+#telText2 {
+    font-size: 40px;
+    color: grey;
+}
+
+#lastFooterMain {
+    padding: 20px;
+    text-align: center;
+    border-top: 1px solid grey;
+    background-color: black;
+    color: white;
+    margin: 20px 50px 10px 50px;
+}
+
+.lastText {
+    text-decoration: none;
+    color: white;
+}
+#popupDiv{
+    height: 100vh;
+    width: 1200px;
+    background-color: rgb(33, 33, 32,0.8);
+    position: fixed;
+    top: 0;
+    display: none;
+   
+}
+#LoginImg{
+    height:400px;
+    width:300px ;
+    background-image: url("https://img.freepik.com/free-vector/access-control-system-abstract-concept_335657-3180.jpg");
+    background-size: contain;
+    display: inline-block;
+    /* position: absolute;
+    top: 164px;
+    left: 200px; */
+}
+#popup-child{
+    height: 400px;
+    width: 400px;
+    background: linear-gradient(to right, #ac924e, #fbc226); 
+    position: absolute;
+    /* inset: 0;
+    margin: auto; */
+    display: inline-block;
+}
+#popupChildMain{
+    height: 400px;
+    width: 730px;
+	/*  max-height:90%;
+	  max-width:50%;   */
+    position: absolute;
+    inset: 0;
+    margin: auto;
+
+}
+#close{
+    position: absolute;
+    top: 5px;
+    left: 360px;
+    cursor: pointer;
+    color: white;
+    border-radius: 50px;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+#formDiv{
+    height: 300px;
+    width: 350px;
+    /* background-color: red; */  
+    margin: auto;
+    margin-top: 60px;
+	
+}
+#Username,#Password{
+    padding: 6px;
+    background: none;
+    border: none;
+    border-bottom: 1px solid;
+    width: 280px;
+    margin-top: 10px;
+    font-size: 20px;
+    margin-left: 25px;
+    color: rgb(246, 239, 239);
+    
+}
+::placeholder {
+    color: rgb(231, 223, 223);
+    
+  }
+#labelUsername,#labelPassword{
+   color: rgb(251, 249, 249);
+   font-size: 20px;
+   margin-left: 20px;
+   
+
+}
+#Username,#Password:focus{
+    outline: none;
+}
+#Loginbtn{
+    padding: 15px 28px;
+    background-color: #2e7ec4;
+    border: 1px solid;
+    margin: 50px 10px 10px 120px;
+    color: white;
+    font-size:large;
+    cursor: pointer;
+    border-radius: 5px;
+    box-shadow: 5px 3px 5px rgba(0, 0, 0, 0.5);
+}
+#Loginbtn:hover{
+    background-color: white;
+    color:#2e7ec4 ;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+}
+
+.alertLogoutBtn{
+padding:12px 15px;
+margin:10px;
+border:none;
+cursor:pointer;
+border-radius:5px;
+
+}
+#logout{
+background-color:red;
+color:white;
+
+}
+#cancle{
+background-color:#00CED1;
+color:black;
+}
+#logout:hover{
+background-color:white;
+color:red;
+}
+#cancle:hover{
+background-color:black;
+color:white;
+}
+
+#Formcontainer {
+    border-radius: 5px;
+    background-color: rgb(33, 33, 32,0.8);
+    padding: 20px;
+    height: 100vh;
+    width: 1200px;
+    position: fixed;
+     top: 0;
+    	
+    display: none;
+  }
+  #closeRegister{
+    position: absolute;
+    top: 5px;
+    left: 430px;
+    cursor: pointer;
+    color: white;
+    border-radius: 50px;
+    font-size: 35px;
+    font-weight: bold;
+}
+#closeRegister:hover{
+color:black;
+}
+#close:hover{
+color:black;
+}
+  #formDiv1{
+    width:420px;
+    height:500px;
+	max-height:70%;
+    position: fixed;
+    inset: 0;
+    margin:auto;
+    /* background-color:green; */
+    background: linear-gradient(to right, #af934b, #fbc226); 
+    padding:20px;
+    border-radius:10px;
+	overflow-y:scroll;
+	overflow-x:none;
+
+  }
+  ::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #fbc226; 
+  border-radius: 10px;
+}
+
+  .starColor{
+  color:red;
+  }
+  .inpformat{
+  padding:6px;
+  width:400px;
+  /* border-radius:5px; */
+  margin:8px;
+  border:none;
+  background: none;
+  border-bottom: 1px solid ;
+  color: rgb(246, 239, 239);
+  }
+  .inpformat:focus{
+  outline:none;
+  }
+  #city,#state{
+width:400px;
+padding:6px;
+border:none;
+margin:8px;
+background: transparent;
+border-bottom: 1px solid white;
+color:white;
+
+}
+select option{
+background-color:#af934b;
+}
+  ::placeholder {
+    color: #AAD7D9;
+    
+  }
+  .lableColor{
+    color: rgb(255, 255, 255);
+  }
+   
+  
+  #gender{
+  width:30px;
+  margin:8px;
+  
+  }
+  .checkBoxDiv{
+  width:20px;
+  margin:5px;
+  }
+  .btn{
+  padding:10px 15px ;
+  /* border-color:white; */
+  margin:10px;
+  cursor:pointer;
+  border-radius:5px;
+  border:1px solid white;
+  }
+  #btn-div{
+  margin-left:30%;
+  }
+  #submit{
+  background-color:green;
+  color:white;
+  box-shadow: 5px 3px 5px rgba(0, 0, 0, 0.5);
+  
+  }
+  #resetBtn{
+  background-color:red;
+  color:white;
+  box-shadow: 5px 3px 5px rgba(0, 0, 0, 0.5);
+  }
+  #submit:hover{
+    background-color: white;
+    color: green;
+	border:1px solid green;
+  }
+  #resetBtn:hover{
+    background-color: white;
+    color: red;
+	border:1px solid red;
+  }
+  #registerlink{
+    color: #2e7ec4;
+    text-align: center;
+    
+  }
+  #registerLinkDiv{
+   margin-top: 20px;
+   text-align: center;   
+   margin-left:30px;
+  }
+  
+  .alert {
+    padding: 15px;
+    /* background: linear-gradient(to right, #f7a2a2, #dd1818); */
+	background:  linear-gradient(120deg, #990000 0%, #ff0000 74%);
+    color: white;
+    display: none;
+    width: 400px;
+    position: absolute;
+	font-size:100%;
+    top: 10px;
+    left:20px;
+	/* transform: translate(-70%,-80%); */
+  }
+  
+  .closebtn {
+    margin-left: 15px;
+    color: white;
+    font-weight: bold;
+    float: right;
+    font-size: 22px;
+    line-height: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+  
+  }
+  
+  .closebtn:hover {
+    color: black;
+  }
+  
+  #progressBar,#progressBarLogin ,#progressBarlogout{
+    width: 200px;
+    height: 5px;
+    background: white;
+    margin-top: 3px;
+    
+  }
+ #alertBoxLogout{
+   padding: 15px;
+    /* background: linear-gradient(to right, #f7a2a2, #dd1818); */
+  	/* background:  linear-gradient(120deg, #990000 0%, #ff0000 74%); */
+	 background-image: radial-gradient( circle 321px at 8.3% 75.7%,  rgba(209,247,241,1) 0%, rgba(249,213,213,1) 81% );;
+    /* color: white; */
+	 color:black;
+    display: none;
+    width: 400px;
+    position: absolute;
+  	font-size:100%;
+    inset:0;
+	margin:auto;
+	height:100px;
+	display:none;
+  }
+ #alertBoxLogoutParent{
+  height:100vh;
+  width:100%;
+  margin:0 auto;
+   background-color: rgb(33, 33, 32,0.8);
+   position:fixed;
+  top: 0px;
+    left:0px;
+	display:none;
+	
+  }
+  
+  @keyframes progress {
+    0% {
+        width: 380px
+    }
+  
+    100% {
+        width: 0px
+    }
+  
+  }
+  .errorDiv{
+    color: red;
+    font-size: 10px;
+    padding: 0px;
+    /* display: none; */
+  }
+  table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 50px;
+    margin-top: 20px;
+
+}
+th, td {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+tr:nth-child(odd) {
+    background-color:#fbc226;
+  }  
+tr:nth-child(even) {
+    background-color: #74f8f8;
+  }
+  tr:hover{
+    background-color: #575652;
+    color: white;
+  }
+th {
+    background-color: #f2f2f2;
+}
+#TablePage{
+    background-color:black;
+    height: 100vh;
+    width: 1200px;
+    position: fixed;
+    top: 0; 	
+    display: none;
+
+}
+#tableButton{
+    cursor: pointer;
+    /* position: absolute;
+    top:600px; */
+}
