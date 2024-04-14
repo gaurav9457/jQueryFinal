@@ -33,7 +33,7 @@ $(document).click(function(event){
 		 || eleId=="tableButton" || eleId=='alertBoxLogoutParent'){
 	    loginObj.closePopup();
 	 }
-	 else if(eleId=="RegisterLink"){
+	 else if(eleId=="RegisterLink" || eleId=='registerlink'){
 	   loginObj.register();
 	 }
 	 else if(eleId=="logout"){
@@ -45,7 +45,7 @@ $(document).click(function(event){
 	 else if(eleId=="Loginbtn"){
 	 validate.loginAuth();
 	 }
-	 else if(event.target.innerHTML=="All USERS"){
+	 else if(event.target.innerHTML=="All USERS" || eleId=="loginName" || eleId=='profileIcon'){
 	 loginObj.displayTable();
 	 }
 	 else if(event.target.innerHTML=="LOGOUT"){
@@ -284,9 +284,9 @@ function ValidationFormMain() {
 		    alertDisplay("Please enter correct pincode");
 		}
 
-       // else if (checkboxes.length === 0) {
-           // $("#checkboxError").html("Please select at least one skill");
-       // }
+        else if (checkboxes.length === 0) {
+            $("#checkboxError").html("Please select at least one skill");
+        }
 
         else {
 			
@@ -710,16 +710,22 @@ function ValidationFormMain() {
          let pattern=/^[a-zA-Z0-9_@.]{8,20}$/;
          
 		  if(e.id=="Username"){  
+            if (/[#$%&*()!^]/.test(e.value)) {
+                e.value = e.value.replace(/[#$%&*()!^]/g, ''); 
+                err.html("Error: Username contain underscores, '@', or periods only. ");
+                return;
+            }
             if (!/^[a-zA-Z0-9_@.]{8,20}$/.test(e.value)) {
                 err.html("Please enter alphanumeric characters, underscores, '@', or periods only.");
                
                // e.preventDefault(); 
-                return false; 
+              //  return false; 
             } else {
                 err.html("&nbsp;");
             }
 		  }
 		  else if(e.id=="Password"){
+
 		   if (e.value.length > 14) {
               err.html("Please enter upto 15 characters ");
 		  }
@@ -737,6 +743,8 @@ function ValidationFormMain() {
         var inpUsername = $("#Username").val();
         var inpPassword = $("#Password").val();
         var LoginLink = $("#LoginLink").html();
+        var errUser=$("#UsernameError");
+        var errPass=$("#PasswordError");
 
         //console.log(inpUsername);
         //console.log(inpPassword);
@@ -746,13 +754,26 @@ function ValidationFormMain() {
             $("#RegisterLink").html("All USERS");
            
 			 $("#profileIcon").fadeIn();
-			 $("#loginName").html(`<sup>Welcome ${inpUsername}</sup>`);
+			 $("#loginName").html(`<sup id="loginName">Welcome ${inpUsername}</sup>`);
         }
 		else if(inpUsername=="" || inpPassword==""){
             alertDisplayLogin("Please enter user name and password");
+            errUser.html("Please enter user name ");
+            errPass.html("Please enter  password");
 		}
+        // else if(inpUsername!="" || inpPassword!=""){
+        //    // alertDisplayLogin("Please enter user name and password");
+        //     errUser.html("&nbsp;");
+        //     errPass.html("&nbsp");
+		// }
+        else if(password != inpPassword){
+            alertDisplayLogin("Wrong password login again");
+            errPass.html("Wrong password login again");
+        }
+        
         else {
             alertDisplayLogin("User not found Login again");
+
         }
     }
 
